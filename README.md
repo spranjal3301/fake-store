@@ -2,7 +2,7 @@
 
 A modern e-commerce application built with Next.js, TypeScript, and Tailwind CSS. This project demonstrates a fully functional online store using the FakeStore API.
 
-![FakeStore E-commerce Screenshot](https://placeholder.svg?height=400&width=800)
+![FakeStore E-commerce Screenshot](https://github.com/spranjal3301/fake-store/blob/main/public/preview.png?raw=true)
 
 ## 🚀 Live Demo
 

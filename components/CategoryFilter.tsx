@@ -47,7 +47,7 @@ export default function CategoryFilter({ selectedCategory }: { selectedCategory?
   }
 
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <label htmlFor="category-filter" className="block text-sm font-medium mb-2">
         Category
       </label>
@@ -55,10 +55,10 @@ export default function CategoryFilter({ selectedCategory }: { selectedCategory?
         id="category-filter"
         value={selectedCategory || "all"}
         onChange={(e) => handleCategoryChange(e.target.value)}
-        className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-black"
       >
         {categories.map((category) => (
-          <option key={category} value={category}>
+          <option key={category} value={category} className="bg-black text-white">
             {category === "all" ? "All Categories" : category.charAt(0).toUpperCase() + category.slice(1)}
           </option>
         ))}

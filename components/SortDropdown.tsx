@@ -27,13 +27,13 @@ export default function SortDropdown({ selectedSort }: { selectedSort?: string }
         id="sort-dropdown"
         value={selectedSort || "default"}
         onChange={(e) => handleSortChange(e.target.value)}
-        className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-black text-white"
       >
-        <option value="default">Default</option>
-        <option value="price-asc">Price: Low to High</option>
-        <option value="price-desc">Price: High to Low</option>
-        <option value="title-asc">Name: A to Z</option>
-        <option value="title-desc">Name: Z to A</option>
+        <option className="bg-black text-white" value="default">Default</option>
+        <option className="bg-black text-white" value="price-asc">Price: Low to High</option>
+        <option className="bg-black text-white" value="price-desc">Price: High to Low</option>
+        <option className="bg-black text-white" value="title-asc">Name: A to Z</option>
+        <option className="bg-black text-white" value="title-desc">Name: Z to A</option>
       </select>
     </div>
   )
